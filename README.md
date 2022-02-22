@@ -1,2 +1,1 @@
-# rice
-Nah
+# Nah
