@@ -91,7 +91,7 @@ element-text {
 element selected {
       background-color:             @background;
       text-color:                   @foreground;
-    border:                         0% 0% 0.15% 0.2%;
+    border:                         0% 0% 0.30% 0.27%;
       border-radius:                12px;
       border-color:                 @foreground;
 }
