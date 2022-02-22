@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#  /$$      /$$           /$$
+# | $$  /$ | $$          | $$
+# | $$ /$$$| $$  /$$$$$$ | $$  /$$$$$$   /$$$$$$
+# | $$/$$ $$ $$ |____  $$| $$ /$$__  $$ /$$__  $$
+# | $$$$_  $$$$  /$$$$$$$| $$| $$  \__/| $$  \ $$
+# | $$$/ \  $$$ /$$__  $$| $$| $$      | $$  | $$
+# | $$/   \  $$|  $$$$$$$| $$| $$      | $$$$$$$/
+# |__/     \__/ \_______/|__/|__/      | $$____/
+#                                     | $$
+#                                     | $$
+#                                     |__/      
+# 
+#
+# Made by ~ MaironGui3 ~ v1.0
+# Walrp ~> wal for rofi and polybar
+
+file=".cache/wal/colors-rofi-dark.rasi"
+
+i=1
+while read line; do
+echo "$line" >> ~/tmp && cat ~/tmp > /dev/null 2>&1
+i=$((i+1))
+if [ "$i" -ge 30 ]
+then
+	break
+fi
+done < $file
+
+cp ~/tmp ~/tmp1
+mv ~/tmp ~/.config/polybar/scripts/rofi/colors.rasi
+mv ~/tmp1 ~/.config/rofi/themes/colors.rasi
+
+echo "Done... :)"
