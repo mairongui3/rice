@@ -1,3 +1,15 @@
+configuration {
+    font:                            "Iosevka Nerd Font 10";
+      show-icons:                    true;
+    icon-theme:                      "Papirus";
+      display-drun:                  "";
+      drun-display-format:           "{name}";
+      disable-history:               false;
+    sidebar-mode:                    false;
+}
+
+@import "colors.rasi"
+
 window {
     transparency:									"real";
 		background-color:							@background;
@@ -47,7 +59,6 @@ element-icon {
 		vertical-align:									0.5;
 		size:														24px;
 		border:													0px;
-
 }
 
 element-text {
@@ -98,12 +109,3 @@ prompt {
 		font:														"feather 12";
 }
 
-configuration {
-   font:             								"Iosevka Nerd Font 10";
-     show-icons:                    true;
-   icon-theme:           						"Papirus";
-     display-drun:           				"";
-     drun-display-format:           "{name}";
-     disable-history:               false;
-   sidebar-mode:           					false;
-}
