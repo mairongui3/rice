@@ -5,6 +5,7 @@ sxhkd &
 picom &
 . ~/.config/polybar/launch.sh
 wal -R
+wmname LG3D
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
@@ -37,3 +38,6 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+
